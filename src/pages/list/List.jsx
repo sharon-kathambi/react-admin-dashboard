@@ -1,10 +1,16 @@
 import React from 'react'
+import Sidebar from '../../components/sidebar/Sidebar'
+import Navbar from '../../components/navbar/Navbar'
 import './list.scss'
 
 function List() {
   return (
-    <div>
-      
+    <div className='list'>
+      <Sidebar />
+       <div className="listContainer">
+        <Navbar />
+        datatable
+       </div>
     </div>
   )
 }
