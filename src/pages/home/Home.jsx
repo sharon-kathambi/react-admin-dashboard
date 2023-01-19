@@ -1,6 +1,7 @@
 import React from 'react'
 import Chart from '../../components/chart/Chart'
 import Featured from '../../components/featured/Featured'
+import List from '../../components/table/Table'
 import Navbar from '../../components/navbar/Navbar'
 import Sidebar from '../../components/sidebar/Sidebar'
 import Widget from '../../components/widget/Widget'
@@ -24,7 +25,7 @@ const Home = () => {
         </div>
         <div className="listContainer">
           <div className="listTitle">
-            Latest transactions
+            <List />
           </div>
         </div>
         </div>  
