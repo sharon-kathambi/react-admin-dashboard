@@ -4,7 +4,7 @@ import Sidebar from '../../components/sidebar/Sidebar'
 import DriveFolderUploadOutlinedIcon from "@mui/icons-material/DriveFolderUploadOutlined";
 import './new.scss'
 
-const New = () => {
+const New = ({inputs, title}) => {
   return (
     <div className='new'>
       <Sidebar />
@@ -25,6 +25,13 @@ const New = () => {
                   </label>
                 <input type='file' id='file'/>
               </div>
+              {inputs.map((input) => (
+                <div className="formInput" key={input.id}>
+                  <label>{input.label}</label>
+                  <input type={input.type} placeholder={input.placeholder} />
+                </div>
+              ))}
+              <button>Send</button>
             </form>
           </div>
         </div>
