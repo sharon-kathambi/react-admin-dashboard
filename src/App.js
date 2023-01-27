@@ -4,6 +4,7 @@ import List from "./pages/list/List";
 import Single from "./pages/single/Single";
 import New from "./pages/new/New";
 import { userInputs, productInputs  } from "./formSource";
+import './style/dark.scss'
 import ReactDOM from "react-dom/client";
 import {
   BrowserRouter,
@@ -15,7 +16,7 @@ import {
 
 function App() {
   return (
-    <div className="App">
+    <div className="app dark">
      <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />}/>
