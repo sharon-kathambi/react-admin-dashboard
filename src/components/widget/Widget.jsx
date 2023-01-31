@@ -5,6 +5,8 @@ import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import MonetizationOnOutlinedIcon from '@mui/icons-material/MonetizationOnOutlined';
 import AccountBalanceOutlinedIcon from '@mui/icons-material/AccountBalanceOutlined';
+import WorkIcon from '@mui/icons-material/Work';
+import BusinessIcon from '@mui/icons-material/Business';
 
 const Widget = ({ type }) => {
     let data;
@@ -16,9 +18,9 @@ const Widget = ({ type }) => {
     switch (type) {
         case 'user':
             data = {
-                title: 'USERS',
+                title: 'COMPANIES',
                 isMoney: false,
-                link: 'See all users',
+                link: 'See all companies',
                 icon: <PersonOutlineOutlinedIcon 
                 className='icon' 
                 style={{
@@ -29,10 +31,10 @@ const Widget = ({ type }) => {
             break;
             case 'order':
                 data = {
-                    title: 'ORDERS',
+                    title: 'JOBS',
                     isMoney: false,
-                    link: 'View all orders',
-                    icon: <ShoppingCartOutlinedIcon 
+                    link: 'View all jobs',
+                    icon: <WorkIcon 
                     className='icon'
                     style={{
                         color: 'goldenrod',
@@ -42,10 +44,10 @@ const Widget = ({ type }) => {
                 break;
                 case 'earning':
                     data = {
-                        title: 'EARNINGS',
-                        isMoney: true,
-                        link: 'View net earnings',
-                        icon: <MonetizationOnOutlinedIcon 
+                        title: 'APPLICATIONS',
+                        isMoney: false,
+                        link: 'View all interviews',
+                        icon: <BusinessIcon 
                         className='icon' 
                         style={{
                             color: 'green',

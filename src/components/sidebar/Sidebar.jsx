@@ -12,6 +12,7 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import LogoutIcon from '@mui/icons-material/Logout';
 import NotificationsActiveIcon from '@mui/icons-material/NotificationsActive';
 import SettingsIcon from '@mui/icons-material/Settings';
+import WorkIcon from '@mui/icons-material/Work';
 import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
@@ -33,27 +34,26 @@ const Sidebar = () => {
             </li>
             </Link>
             <p className="title">LISTS</p>
-            <Link to='/users' style={{textDecoration: 'none'}}>
+            <Link to='/companies' style={{textDecoration: 'none'}}>
             <li>
                 <GroupRoundedIcon className='icon' />
-                <span>Users</span>
+                <span>Companies</span>
             </li>
             </Link>
-            <Link to='/products' style={{textDecoration: 'none'}}>
+            <Link to='/jobs/:userId' style={{textDecoration: 'none'}}>
             <li>
                 <QrCodeScannerIcon className='icon'/>
-                <span>Products</span>
+                <span>Jobs</span>
             </li>
             </Link>
+            <Link to='/applications/:applicationId' style={{textDecoration: 'none'}}>
             <li>
                 <CreditCardIcon className='icon'/>
-                <span>Orders</span>
+                <span>Applications</span>
             </li>
+            </Link>
             <p className="title">USEFUL</p>
-            <li>
-                <LocalShippingIcon className='icon' />
-                <span>Delivery</span>
-            </li>
+            
             <li>
                 <AnalyticsIcon className='icon'/>
                 <span>Stats</span>

@@ -12,54 +12,50 @@ const List = () => {
     const rows = [
       {
         id: 1143155,
-        product: "Acer Nitro 5",
+        company: "Shamiri Institute",
         img: "https://m.media-amazon.com/images/I/81bc8mA3nKL._AC_UY327_FMwebp_QL65_.jpg",
-        customer: "John Smith",
-        date: "1 March",
-        amount: 785,
-        method: "Cash on Delivery",
-        status: "Approved",
+        jobtitle: "Tech Product Intern",
+        date: "21 January",
+        rating: '5/5',
+        status: "Interviewing",
       },
       {
-        id: 2235235,
-        product: "Playstation 5",
-        img: "https://m.media-amazon.com/images/I/31JaiPXYI8L._AC_UY327_FMwebp_QL65_.jpg",
-        customer: "Michael Doe",
-        date: "1 March",
-        amount: 900,
-        method: "Online Payment",
+        id: 1143155,
+        company: "Amazon",
+        img: "https://m.media-amazon.com/images/I/81bc8mA3nKL._AC_UY327_FMwebp_QL65_.jpg",
+        jobtitle: "Software Engineering Intern",
+        date: "5 January",
+        rating: '4/5',
         status: "Pending",
       },
       {
-        id: 2342353,
-        product: "Redragon S101",
-        img: "https://m.media-amazon.com/images/I/71kr3WAj1FL._AC_UY327_FMwebp_QL65_.jpg",
-        customer: "John Smith",
-        date: "1 March",
-        amount: 35,
-        method: "Cash on Delivery",
-        status: "Pending",
+        id: 1143155,
+        company: "Intern Match",
+        img: "https://m.media-amazon.com/images/I/81bc8mA3nKL._AC_UY327_FMwebp_QL65_.jpg",
+        jobtitle: "Junior Python Developer",
+        date: "5th December",
+        rating: '5/5',
+        status: "Interviewing",
       },
       {
-        id: 2357741,
-        product: "Razer Blade 15",
-        img: "https://m.media-amazon.com/images/I/71wF7YDIQkL._AC_UY327_FMwebp_QL65_.jpg",
-        customer: "Jane Smith",
-        date: "1 March",
-        amount: 920,
-        method: "Online",
-        status: "Approved",
+        id: 1143155,
+        company: "Microsoft",
+        img: "https://m.media-amazon.com/images/I/81bc8mA3nKL._AC_UY327_FMwebp_QL65_.jpg",
+        jobtitle: "Software Engineering Intern",
+        date: "7 January",
+        rating: '5/5',
+        status: "Rejected",
       },
       {
-        id: 2342355,
-        product: "ASUS ROG Strix",
-        img: "https://m.media-amazon.com/images/I/81hH5vK-MCL._AC_UY327_FMwebp_QL65_.jpg",
-        customer: "Harold Carol",
-        date: "1 March",
-        amount: 2000,
-        method: "Online",
-        status: "Pending",
+        id: 1143155,
+        company: "DirectEd Foundation",
+        img: "https://m.media-amazon.com/images/I/81bc8mA3nKL._AC_UY327_FMwebp_QL65_.jpg",
+        jobtitle: "Technical Mentor",
+        date: "8 December",
+        rating: '5/5',
+        status: "Interviewing",
       },
+      
     ];
 
   return (
@@ -68,11 +64,10 @@ const List = () => {
         <TableHead>
           <TableRow>
             <TableCell className="tableCell">Tracking ID</TableCell>
-            <TableCell className="tableCell">Product</TableCell>
-            <TableCell className="tableCell">Customer</TableCell>
-            <TableCell className="tableCell">Date</TableCell>
-            <TableCell className="tableCell">Amount</TableCell>
-            <TableCell className="tableCell">Payment Method</TableCell>
+            <TableCell className="tableCell">Company</TableCell>
+            <TableCell className="tableCell">Job Title</TableCell>
+            <TableCell className="tableCell">Date of application</TableCell>
+            <TableCell className="tableCell">Rating</TableCell>
             <TableCell className="tableCell">Status</TableCell>
           </TableRow>
         </TableHead>
@@ -83,13 +78,12 @@ const List = () => {
               <TableCell className="tableCell">
                 <div className="cellWrapper">
                   <img src={row.img} alt="" className="image" />
-                  {row.product}
+                  {row.company}
                 </div>
               </TableCell>
-              <TableCell className="tableCell">{row.customer}</TableCell>
+              <TableCell className="tableCell">{row.jobtitle}</TableCell>
               <TableCell className="tableCell">{row.date}</TableCell>
-              <TableCell className="tableCell">{row.amount}</TableCell>
-              <TableCell className="tableCell">{row.method}</TableCell>
+              <TableCell className="tableCell">{row.rating}</TableCell>
               <TableCell className="tableCell">
                 <span className={`status ${row.status}`}>{row.status}</span>
               </TableCell> 

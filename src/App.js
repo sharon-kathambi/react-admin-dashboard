@@ -21,15 +21,20 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />}/>
         <Route path="login" element={<Login />} />
-        <Route path="users">
+        <Route path="companies">
           <Route index element={<List />} />
           <Route path=":userId" element={<Single />} /> 
-          <Route path="new" element={<New inputs={userInputs} title='Add New User'/> } />
+          <Route path="new" element={<New inputs={userInputs} title='Add New Company'/> } />
         </Route>
-        <Route path="products">
+        <Route path="jobs">
           <Route index element={<List />} />
           <Route path=":productId" element={<Single />} /> 
-          <Route path="new" element={<New inputs={productInputs} title='Add New Product'/> } />
+          <Route path="new" element={<New inputs={productInputs} title='Add New Job'/> } />
+        </Route>
+        <Route path="applications">
+          <Route index element={<List />} />
+          <Route path=":productId" element={<Single />} /> 
+          <Route path="new" element={<New inputs={productInputs} title='Add New Application'/> } />
         </Route>
       </Routes>
      </BrowserRouter>
