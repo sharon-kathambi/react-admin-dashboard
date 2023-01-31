@@ -8,7 +8,7 @@ By {Sharon Mwenda}
 {This application helps a user to list and track their job applications. }
 
 # Setup/Installation Requirements
-Deployed frontend link : 
+Deployed frontend link : https://code-job-tracker.vercel.app/
 
 Working on the backend using ruby on rails
 
